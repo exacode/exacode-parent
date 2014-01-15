@@ -45,7 +45,7 @@
 					<configuration>
 						<mavenExecutorId>forked-path</mavenExecutorId>
 						<useReleaseProfile>false</useReleaseProfile>
-						<arguments>-Prelease</arguments>
+						<arguments>-Pexacode-release -Pexacode-gpg</arguments>
 					</configuration>
 				</plugin>
 			</plugins>
@@ -54,7 +54,7 @@
 
 	<profiles>
 		<profile>
-			<id>release</id>
+			<id>exacode-release</id>
 			<build>
 				<plugins>
 					<plugin>
